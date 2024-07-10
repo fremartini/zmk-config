@@ -17,8 +17,8 @@
         left {
             bindings = <
 &kp EXCL           &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp GRAVE  &kp TILDE
-&kp DOUBLE_QUOTES  &kp LBKT     &kp LBRC  &kp LPAR    &trans         &kp FSLH   &kp MINUS      &kp EQUAL     &kp COLON  &kp SEMICOLON
-&kp SQT            &kp RBKT     &kp RBRC  &kp RPAR    &trans         &kp BSLH   &kp UNDER      &kp PLUS      &kp PIPE   &kp QMARK
+&kp DOUBLE_QUOTES  &kp LBKT     &kp LBRC  &kp LPAR    &kp LC(C)      &kp FSLH   &kp MINUS      &kp EQUAL     &kp COLON  &kp SEMICOLON
+&kp SQT            &kp RBKT     &kp RBRC  &kp RPAR    &kp LC(V)      &kp BSLH   &kp UNDER      &kp PLUS      &kp PIPE   &kp QMARK
                                           &trans      &trans         &trans     &trans
             >;
         };
