@@ -10,7 +10,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor =  "balanced";
+            flavor = "balanced";
         };
     };
 
@@ -42,6 +42,24 @@
 &trans      &trans        &trans           &trans      &trans        &trans  &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END
                                            &trans      &kp ESCAPE    &trans  &trans
             >;
+        };
+
+        tri {
+            bindings = <
+&kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans  &trans  &kp LEFT_WIN  &kp C_MUTE         &kp C_NEXT
+&kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &trans  &trans        &kp C_VOLUME_UP    &kp C_PP
+&kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &trans  &trans        &kp C_VOLUME_DOWN  &kp C_PREV
+                          &trans   &trans    &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tri {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
