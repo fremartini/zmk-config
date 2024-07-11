@@ -3,14 +3,23 @@
 
 / {
     behaviors {
-        dkp: dkp {
+        hat: hat {
             compatible = "zmk,behavior-hold-tap";
-            label = "DKP";
+            label = "hold and tap";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
+        };
+    };
+
+    macros {
+        wlock: wlock {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN &kp L>;
+            label = "windows lock";
         };
     };
 
@@ -22,7 +31,7 @@
 &kp Q  &kp W  &kp E  &kp R      &kp T         &kp Y                    &kp U      &kp I      &kp O       &kp P
 &kp A  &kp S  &kp D  &kp F      &kp G         &kp H                    &kp J      &kp K      &kp L       &kp BACKSPACE
 &kp Z  &kp X  &kp C  &kp V      &kp B         &kp N                    &kp M      &kp COMMA  &kp PERIOD  &kp ENTER
-                     &lt 1 TAB  &kp LSHIFT    &dkp LEFT_CONTROL SPACE  &lt 2 TAB
+                     &lt 1 TAB  &kp LSHIFT    &hat LEFT_CONTROL SPACE  &lt 2 TAB
             >;
         };
 
@@ -47,7 +56,7 @@
         tri {
             bindings = <
 &kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans  &trans  &kp LEFT_WIN  &kp C_MUTE         &kp C_NEXT
-&kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &trans  &trans        &kp C_VOLUME_UP    &kp C_PP
+&kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &trans  &wlock        &kp C_VOLUME_UP    &kp C_PP
 &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &trans  &trans        &kp C_VOLUME_DOWN  &kp C_PREV
                           &trans   &trans    &trans  &trans
             >;
