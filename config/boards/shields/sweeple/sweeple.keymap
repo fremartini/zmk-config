@@ -37,10 +37,10 @@
 
         left {
             bindings = <
-&kp EXCL           &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp GRAVE  &kp TILDE
-&kp DOUBLE_QUOTES  &kp LBKT     &kp LBRC  &kp LPAR    &trans         &kp FSLH   &kp MINUS      &kp EQUAL     &kp COLON  &kp SEMICOLON
-&kp SQT            &kp RBKT     &kp RBRC  &kp RPAR    &trans         &kp BSLH   &kp UNDER      &kp PLUS      &kp PIPE   &kp QMARK
-                                          &trans      &trans         &trans     &trans
+&kp EXCLAMATION    &kp AT_SIGN  &kp POUND        &kp DOLLAR             &kp PERCENT    &kp CARET      &kp AMPERSAND   &kp ASTERISK  &kp GRAVE  &kp TILDE
+&kp DOUBLE_QUOTES  &kp LBKT     &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &trans         &kp SLASH      &kp MINUS       &kp EQUAL     &kp COLON  &kp SEMICOLON
+&kp SQT            &kp RBKT     &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans         &kp BACKSLASH  &kp UNDERSCORE  &kp PLUS      &kp PIPE   &kp QUESTION
+                                                 &trans                 &trans         &trans         &trans
             >;
         };
 
